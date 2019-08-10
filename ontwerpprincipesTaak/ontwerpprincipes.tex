@@ -1,0 +1,84 @@
+\documentclass[a4paper]{article}
+\usepackage[a4paper]{geometry}
+\usepackage[dutch]{babel}
+\usepackage{todonotes}
+\title{Vergelijking van Google Slides en LibreOffice Impress aan de hand van de ontwerprincipes van Shneiderman en Norman}
+\author{Pieter-Jan Lavaerts}
+\begin{document}
+\maketitle
+\section{Shneiderman}
+Om de applicaties te vergelijken aan de hand van de ontwerpprincipes van Shneiderman zal ik de acht gouden regels van \emph{Principe 2 (Cursus 3.3.2.2)} overlopen. Ik heb evoor gekozen om \emph{Principe 1} geen aparte sectie te geven in mijn verslag maar telkens als dit toepasselijk is bij een bepaalde regel te vermelden of er voor de verschillende groepen van gebruikers (nieuwe, intermediate en expert gebruikers) interessante opmerkingen zijn.\newline
+Omdat wat betreft mijn inzicht het lijkt dat \emph{Principe 3: Voorkom fouten} een uitgebreide vorm is van de vijfde gouden regel (Aandacht hebben voor foutenpreventie en op een eenvoudige manier fouten afhandelen) zal ik ook dit principe geen eigen sectie geven maar deze gouden regel wat meer uitgebreid bespreken dan de anderen.
+\subsection{Gouden regel 1: Streven naar consistentie}
+De toolbar van Impress is minder consistent dan die van Google. Alles in de toolbar is weergegeven aan de hand van gelijkaardige symbolen terwijl er duidelijk verschillende groepen van functionaliteiten zijn.\\
+Een deel van de iconen opent een dialoogvenster, een ander deel verandert het huidig gereedschap (bijvoorbeeld het \emph{Curve} gereedschap om op een slide een lijn te tekenen), nog andere symbolen voeren meteen een actie uit (bijvoorbeeld een slide toevoegen) en de overige symbolen vouwen delen van de interface open om meer functionaliteit te tonen.\\
+Hoewel er in Impress voor al deze functionaliteit gelijkaardige symbolen gebruikt worden is het in Google Slides duidelijker welke onderdelen van de toolbar een dialoogvenster openen (knoppen voorzien van tekst), welke knoppen gereedschap zijn (rechterhelft van de symbolen) en welke knoppen meteen een actie uitvoeren (linkerhelft van de symbolen).
+\todo{Afbeeldingen van toolbar}\\
+Beide applicaties zijn over het algemeen qua stijl en naamgeving zeer consistent. Google gebruikt een moderner flat design terwijl Impress een eerder klassiek uitziend design heeft. Het uitzicht van Impress kan echter wel uitgebreid aangepast worden (zoals elke gtk applicatie) aan de hand van thema's. Mijn screenshots gebruiken het Adwaita thema.
+\subsection{Gouden regel 2: Frequente gebruikers toelaten shortcuts te gebruiken}
+\subsubsection{Keyboard shorcuts}
+In beide applicaties kunnen de gebruikers op exact dezelfde manier de ingestelde keyboard shorcuts ontdekken. Als er in de toolbar over een knop gehoverd wordt, wordt de naam van de bepaalde functionaliteit weergegeven en als deze ingesteld is de shorcut getoond. Een andere manier hoe shorcuts ontdekt kunnen worden is door aan de rechterkant van een opengeklapt item van de menubalk te kjken.
+In Impress is het mogelijk om elke shorcut aan te passen aan de hand van het \textbf{Customize} menu dat te vinden is onder \textbf{Tools\textgreater Customize}. Bestaande functionaliteit in de applicatie kan gevonden worden aan de hand van een zoekbalk en het is mogelijk om macros te defini\"eren en deze aan shortcuts toe te wijzen.
+\todo{Screenshot van shortcuts menu}\\
+In Google Slides ontbreekt al deze functionaliteit.\\
+Impress is op het vlak van keyboard shortcuts duidelijk uitgebreider dan Google Slides.
+\subsubsection{Toolbar}
+Beide applicaties zijn zoals eerder al vermeld voorzien van een toolbar. Out of the box is de toolbar van Google overzichtelijker dan die van Impress omdat de getoonde functionaliteit beperkter is en beter is onderverdeeld. In Impress is het echter mogelijk om de toolbar compleet aan te passen aan de hand van het \textbf{Customize} menu. Er kunnen knoppen toegevoegd worden voor eender welke functionaliteit of macro en de knoppen kunnen ook van volgorde en van uitzicht aangepast worden.
+\subsubsection{Conclusie}
+Standaard zijn beide applicaties gelijk op vlak van keyboard shortcuts, maar voor expert gebruikers biedt Impress een extra dimensie aan customizability die niet aanwezig is in Google Slides.\\
+By default is de Google toolbar voor beginnende en intermediate gebruikers zeker overzichtelijker en eenvoudiger dan die van Impress maar opnieuw kan Google niet tippen aan de uitgebreide aanpasbaarheid van Impress die vooral gericht is op expert gebruikers.
+\subsection{Gouden regel 3: Informatieve feedback aanbieden}
+Als in Impress de applicatie dreigt gesloten te worden terwijl er aanpassingen niet opgeslagen zijn wordt er een dialoogvenster getoond om de gebruiker te waarschuwen.
+In Google Slides wordt in dezelfde situatie een standaard melding van de browser getoond die niet erg informatief en niet consistent met de applicatie is.
+\todo{Van beide applicaties screenshots}
+\subsection{Gouden regel 4: Dialogen ontwerpen zodat onverwachte resultaten uitgesloten worden en de voortgang duidelijk is}
+LibreOffice gebruikt soms een aparte interface voor het invoegen van bijvoorbeeld een grafiek of wiskundige formule. Omdat er geen apart venster geopend wordt zou dit verwarrend kunnen zijn voor beginnende gebruikers.
+Er is geen aanduiding die weergeeft dat de gebruiker zich in een specifiek onderdeel van de inteface bevindt noch is er een aanduiding die toont hoe de gebruiker kan terugkeren naar het hoofdscherm.
+Ik heb zelf ontdekt dat als er op een leeg deel van de interface wordt geklikt (bijvoorbeeld naast de slides) de applicatie terug keert naar het hoofdscherm maar ik weet niet of dit de aangewezen methode is. \\
+In Google Slides werkt het invoegen van een grafiek op een gelijkaardige manier, maar in plaats van de volledige hoofdinterface te vervangen worden er op de toolbar enkele iconen toegevoegd.
+In het grafiek bewerkscherm van Impress kan het type grafiek aangepast worden via een dialoogvenster. Zelf zou ik het duidelijker vinden dat dit dialoogvenster meteen opent als de gebruiker een grafiek invoegt, met daarna een dialoogvenster om de data van de grafiek in te stellen. (In oudere versies van LibreOffice was dit hoe het invoegen van een grafiek werkte.)
+Bij het invoegen van sommige objecten (tabellen of fontwork) opent er wel een dialoogvenster dat vraagt hoe het bepaalde object ingesteld moet worden. Het lijkt mij alsof nieuwere versies van LibreOffice weg gaan van wizard achtige interfaces om objecten in te voegen maar het is mij een vraag waarom dit het geval is.
+In Google Slides wordt ook nooit een wizard gebruikt in dit geval maar eerder een dieper genest menu zodat enkele belangrijke keuzes gemaakt kunnen worden alvorens het invoegen.\\
+Onder \textbf{File\textgreater Wizards} in de menubalk zijn er in Impress een aantal wizards aanwezig. Deze wizards zijn eerder standalone applicaties die niet meteen iets te maken hebben met slideshows en zijn hetzelfde voor elke libreoffice applicatie.
+\todo{Screenshots van beide applicaties}
+\subsection{Gouden regel 5: Aandacht hebben voor foutenpreventie en op een eenvoudige manier fouten afhandelen en Principe 3: Voorkom fouten}
+\subsection{Gouden regel 6: Acties omkeerbaar maken ('undo')}
+In zowel Impress als Google Slides kan er heen en terug worden gegaan door de acties van de gebruiker aan de hand van redo en undo knoppen en aan de hand van keyboard shortcuts.
+In Impress is het ook mogelijk om de laatste 10 acties heen of terug te bekijken en verder te springen door de geschiedenis van acties met meerdere acties in \'e\'en keer.
+\todo{Screenshots}
+\subsection{Gouden regel 7: De gebruiker meester over het systeem laten zijn}
+Beide applicaties bieden uitbreidingen van de applicatie aan. In libreoffice kan het extensies menu gevonden worden onder \textbf{Tools\textgreater Extension Manager...}. In Google Slides heten uitbreidingen Add-Ons. Ze kunnen beheerd worden door in de menubalk op Add-ons te klikken.\\
+Standaard is Impress aanpasbaarder dan Google Slides omdat het zonder Add-ons onmogelijk is de interface van Google Slides aan te passen, terwijl dit in Impress een zeer uitgebreid deel van de applicatie is.\\
+Het grootste deel van de aanpassingsmogelijkheden in Impress is te vinden onder \textbf{Tools\textgreater Customize...}. Ik zou zeggen dat deze features niet enkel voor expert gebruikers zijn maar ook voor intermediate gebruikers omdat dit scherm zeer gebruiksvriendelijk is. Het kan gebruikt worden om de menu's van de menubalk, de toolbar, de context menu's en de keyboard shortcuts aan te passen.\\
+Impress heeft naast extensies en een uitgebreide customizability ook ondersteuning voor macros en dit in wel 4 programmeertalen. De macro's kunnen beheerd worden onder \textbf{Tools\textgreater Macros}. In dit menu zijn ook Dialogs te vinden wat een soort van wizards zijn die door gebruikers eenvoudig zelf gemaakt kunnen worden.\\
+Het is duidelijk welke applicatie bij deze gouden regel de winnaar is. De uitbreidingsmogelijkheden van Impress zijn zeer indrukwekkend. Ik denk dat dit te wijten is aan de opensource aard van Impress. 
+\subsection{Gouden regel 8: Het aantal gegevens beperken dat de gebruiker op korte termijn moet onthouden}
+Google Slides beperkt de hoeveelheid getoonde functies meer dan LibreOffice Impress, wat een goede keuze is voor deze gouden regel. Voor beginnende gebruikers is Google Slides minder overweldigend en gebruiksvriendelijker omdat de gebruiker van een kleiner aantal iconen hoeft onthouden wat ze betekenen.
+\section{Norman}
+De vergelijking van de applicaties aan de hand van de principes van Norman zal ik doen door de vijf principes te overlopen en toepasselijke opmerkingen te maken per applicatie.
+\subsection{Visibility}
+Het visibility principe toegepast op grafische user interfaces wil zeggen dat er voor functionaliteit elementen moeten bestaan in de interface. Er is echter een balans: Bij een teveel aan visibility (voor elke mogelijke functie een element in de interface) ontstaat er een onoverzichtelijke interface, bij tekort aan visibility is de applicatie minder bruikbaar omdat de gebruiker moet onthouden waar de functionaliteit verborgen is.\\
+Google Slides toont minder functionaliteit tegelijkertijd (minder visiblity) dan Impress maar naar mijn opinie vindt het beter deze voornoemde balans. Impress ligt voorbij deze balans en heeft in vergelijking met Google Slides een eerder onoverzichtelijke interface door een teveel aan visibility. 
+\subsection{Affordances}
+Beide applicaties maken weinig gebruik van affordances. Omdat Google een modern flat design hanteerd worden er nergens \emph{``reli\"ef-illusies''} gebruikt om iets een indrukbaar of uitgehold uitzicht te geven. In Impress is dit op sommige plaatsen wel nog het geval maar in vergelijking met oudere versien van LibreOffice lijkt het alsof ook deze applicatie steeds meer weggaat van deze klassieke indrukbaar uitziende knoppen.\\
+Nog een affordance in Impress zijn de pijltjes op de zijpanelen die aanduiden dat ze open- of toegevouwen kunnen worden door er op te klikken.\\
+Buiten indrukbare knoppen of menu's en deze pijltes vond ik geen en geen van beide applicaties voorbeelden van affordances.
+\subsection{Mappings}
+In Google Sildes wordt er gebruik gemaakt van een mapping als er tijdens de applicatie \textbf{Vraag en antwoord} wordt geopend. Dit is een scherm voor de presentator waarin de huidige presentatie in het klein getoond wordt samen met de vorige en volgende slide.\\
+\todo{Screenshot van vraag en antwoord scherm}
+In Impress wordt er gebruik gemaakt van een mapping bij de voorbeelden van de slide transities. Bij de naam van elke transitie wordt een kleine icoon getoond van de huidige slide (blauw) en de volgende slide (wit).
+\todo{Slide Transition scherm screenshot}
+\subsection{Feedback}
+Beide applicaties maken uitsluitend gebruik van visuele feedback (tenzij het besturingssysteem geluid maakt bij meldingen, wat bij mij niet het geval is). Auditieve feedback zou een optie zijn voor deze applicaties om zich meer responsief te maken aan de hand van multisensory feedback.\\
+Zoals in de meeste grafische applicaties wordt er veelvuldig gebruik gemaakt van feedback in beide applicaties. Enkele typische voorbeelden zijn, de achtergrond van een item veranderen als het geselecteerd wordt, een knop van kleur veranderen als er op geklikt wordt en een element uitvagen wanneer het niet beschikbaar is.
+\todo{Afbeeldingen met voorbeelden}
+\subsection{Constraints}
+Beide applicaties steunen op de culturele conventie dat opeenvolgende elementen eerder van boven naar onder dan van onder naar boven geplaatst worden. Derhalve worden de slides gerangschikt van boven naar onder volgens hun volgorde in de presentatie in beide applicaties. Dit is een culturele constraint.\\
+Beide applicaties maken ook gebruik van logische constraints. Omdat desktop besturingssystemen doorgaans maar \'e\'en muiscursor hebben is het onmogelijk om meerdere functionaliteit tegelijkertijd uit te voeren door twee knoppen tegelijk in te drukken. Het is wel mogelijk om op iets te klikken en tegelijkertijd een shortcut in te drukken.
+\section{Metafoor}
+Iets wat niet bij de vorige ontwerpprincipes past maar wat wel zeer toepasselijk is voor slideshow applicaties is het gebruik van metaforen. Vele van onze meestgebruikte desktopapplicaties zijn metaforen van concepten die bestonden voor de computer uitgevonden werd en slideshow applicaties zijn hier een cookie-cutter voorbeeld van.\\
+Slideshow applicaties zijn ontworpen rond de metafoor van een diavoorstelling aan de hand van dia's en een projector. Gelukkig zijn er een heel aantal voordelige mismatches.\\ 
+Het aantal slides is (praktisch) oneinding en er is een preview voor de presentator bijvoorbeeld.
+\section{Conclusie}
+Google Slides is gebruikersvriendelijker voor beginnende en intermediate gebruikers omwille van een overzichtelijkere en intuitievere interface. Een expert gebruiker zal daarentegen meer hebben aan LibreOffice Impress omwille van de extensieve uitbreidbaarheid en aanpasbaarheid van deze applicatie. 
+\end{document}
